@@ -14,6 +14,8 @@ import customMarker from "../../assets/marker.png";
 export default function Home() {
   const [location, setLocation] = useState<LocationObject | null>(null);
   const [findStation, setFindStation] = useState(false);
+  const { GOOGLE_KEY } = process.env;
+  console.log(GOOGLE_KEY);
 
   const mapRef = useRef<MapView>(null);
 
@@ -78,11 +80,11 @@ export default function Home() {
       )}
       <View style={styles.content}>
         <TouchableOpacity
-          style={findStation ? styles.findButtonTrue : styles.findButtonFalse}
+          style={!findStation ? styles.findButtonTrue : styles.findButtonFalse}
           onPress={handleFindStation}
         >
           <Text style={styles.buttonText}>
-            {findStation ? "Ligar" : "Desligar"}
+            {!findStation ? "Ligar" : "Desligar"}
           </Text>
         </TouchableOpacity>
       </View>
