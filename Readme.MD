@@ -4,6 +4,10 @@
 
 </br>
 
+<p align="center">
+  <img alt="" src=".github/bus-station-app.gif" />
+</p>
+
 ## ⚙ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
