@@ -99,7 +99,7 @@ function BusStationProvider({ children }: BusStationProviderData) {
         setIsFetchBusStation(true);
 
         const formatedLocation = `${location?.coords.latitude},${location?.coords.longitude}`;
-        const radius = 1000; // search radius in meters
+        const radius = 1000; //1km // search radius in meters
         const type = "bus_station"; // type of place
         const apiKey = process.env.GOOGLE_KEY;
 
