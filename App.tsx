@@ -1,5 +1,10 @@
-import Home from "./src/Home";
+import { BusStationProvider } from "./src/hooks/useBusStation";
+import Home from "./src/screens/Home";
 
 export default function App() {
-  return <Home />;
+  return (
+    <BusStationProvider>
+      <Home />
+    </BusStationProvider>
+  );
 }

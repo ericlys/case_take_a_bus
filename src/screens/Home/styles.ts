@@ -7,6 +7,11 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  text: {
+    fontSize: 20,
+    padding: 23,
+    textAlign: "center",
+  },
   map: {
     flex: 1,
     width: "100%",
@@ -28,6 +33,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#31CF67",
     alignItems: "center",
     justifyContent: "center",
+    flexDirection: "row",
   },
   findButtonFalse: {
     width: "100%",
@@ -36,6 +42,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#E23E44",
     alignItems: "center",
     justifyContent: "center",
+    flexDirection: "row",
   },
   buttonText: {
     color: "#FFF",
